@@ -1,6 +1,5 @@
 /* Aos animation on window loads */
 window.addEventListener('load', () => {
-    apiMpas()
     AOS.init({
         duration: 1000,
         easing: 'ease-in-out',
@@ -10,6 +9,7 @@ window.addEventListener('load', () => {
     scrollEvent();
     portfolioFilters();
     backToTop();
+    apiMpas();
 });
 
 /* Set api key to iframe */
