@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - origin
 
 jobs:
   build:
@@ -17,6 +17,3 @@ jobs:
 
       - name: Set API key
         run: echo "window.API_KEY = '${{ secrets.API_KEY }}';" >> $GITHUB_WORKSPACE/assets/js/main.js
-
-      - name: Deploy to GitHub Pages
-        run: mv * $GITHUB_WORKSPACE
