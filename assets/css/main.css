@@ -165,6 +165,10 @@ nav li a {
 }
 
 @media (max-width: 768px) {
+    #hero {
+        background-color: #040b14;
+    }
+    
     #hero h1 {
         font-size: 34px;
         line-height: 36px;
