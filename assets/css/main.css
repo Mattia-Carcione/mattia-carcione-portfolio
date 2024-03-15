@@ -138,6 +138,7 @@ nav li a {
 # Hero
 --------------------------------------------------------------*/
 #hero {
+    background-image: url('https://e0.pxfuel.com/wallpapers/32/247/desktop-wallpaper-black-laptop-computer-beside-white-ceramic-mug-filled-with-brown-coffee-laptop.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -167,8 +168,9 @@ nav li a {
 @media (max-width: 768px) {
     #hero {
         background-color: #040b14;
+        background-image: none;
     }
-    
+
     #hero h1 {
         font-size: 34px;
         line-height: 36px;
