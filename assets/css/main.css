@@ -138,7 +138,7 @@ nav li a {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-    background-image: url('/assets/images/portfolio/heroimage.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/27/15/12/geeks-2894621_1280.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
