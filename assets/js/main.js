@@ -1,5 +1,5 @@
 /* Aos animation on window loads */
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 1000,
         easing: 'ease-in-out',
