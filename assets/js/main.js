@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 /* Set api key to iframe */
-const API_KEY = process.env.API_KEY;
+const API_KEY = '';
 
 async function apiMpas () {
     const frame = document.getElementById('frame');
