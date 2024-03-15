@@ -12,8 +12,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
-        run: mv * $GITHUB_WORKSPACE
-
       - name: Set API key
         run: echo "window.API_KEY = '${{ secrets.API_KEY }}';" >> $GITHUB_WORKSPACE/assets/js/main.js
