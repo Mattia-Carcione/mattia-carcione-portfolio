@@ -15,7 +15,9 @@ jobs:
       - name: Use API key
         env:
           API_KEY: ${{ secrets.API_KEY }}
-        run: |
-          echo "API_KEY value: $API_KEY"  # Debug output
-          sed -i "s/const API_KEY = '';/const API_KEY = '${API_KEY}';/" assets/js/main.js
-          cat assets/js/main.js  # Debug output
+
+      - name: Set API key
+        run: echo "window.API_KEY = '${API_KEY}';" >> $GITHUB_WORKSPACE/assets/js/main.js
+
+      - name: Deploy to GitHub Pages
+        run: mv * $GITHUB_WORKSPACE
