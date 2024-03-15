@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
 /* Set api key to iframe */
 async function apiMpas () {
     const frame = document.getElementById('frame');
-    frame.src = `https://www.google.com/maps/embed/v1/place?q=%20Giussago%2C%20PV%2C%20Italia&key=${YOUR_API_KEY}`;
+    frame.src = `https://www.google.com/maps/embed/v1/place?q=%20Giussago%2C%20PV%2C%20Italia&key=${process.env.API_KEY}`;
 }
 
 /* Button Toggle Header */
